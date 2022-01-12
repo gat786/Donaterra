@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+body{
+  @apply bg-background;
+}
+
 ul[class],
 ol[class] {
   padding: 0;
@@ -35,7 +39,6 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  background-color: white;
 }
 
 ul[class],
