@@ -1,20 +1,58 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+:root{
+  --bg-color: #E9F2FF;
+  --text-color: #211B3E;
+}
+
+
 body{
   @apply bg-background;
+}
+
+.text-xl{
+  font-size: medium;
+}
+
+.text-2xl{
+  font-size: large;
+}
+
+.text-3xl{
+  font-size: x-large;
+}
+
+.font-bold{
+  font-weight: bold;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
+.font-medium{
+  font-weight: 500;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.italic{
+  font-style: italic;
 }
 
 ul[class],
 ol[class] {
   padding: 0;
+}
+
+.italic{
+  font-style: italic;
 }
 
 body,
@@ -39,6 +77,8 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background-color:  #E9F2FF;
+  font-family: 'Poppins', sans-serif;
 }
 
 ul[class],

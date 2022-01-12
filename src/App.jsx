@@ -67,9 +67,9 @@ const App = ({ isServerInfo }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isAuthenticated, isWeb3Enabled]);
 
-  return <Layout style={{ height: "100vh", overflow: "auto" }}>
+  return <div style={{ height: "100vh", overflow: "auto" }}>
     <Navbar/>
-  </Layout>;
+  </div>;
 };
 
 export default App;

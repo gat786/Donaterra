@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { MoralisProvider } from "react-moralis";
-import "./index.css";
+import "./index.scss";
 import QuickStart from "components/QuickStart";
 
 /** Get your free Moralis Account https://moralis.io/ */
