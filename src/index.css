@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *,
 *::before,
 *::after {
@@ -57,4 +61,8 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
 }
