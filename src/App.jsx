@@ -24,6 +24,7 @@ import Text from "antd/lib/typography/Text";
 import Ramper from "components/Ramper";
 import MenuItems from "./components/MenuItems";
 import Navbar from "custom-components/Navbar";
+import MainContent from "custom-components/MainContent";
 const { Header, Footer } = Layout;
 
 const styles = {
@@ -67,9 +68,12 @@ const App = ({ isServerInfo }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isAuthenticated, isWeb3Enabled]);
 
-  return <div style={{ height: "100vh", overflow: "auto" }}>
-    <Navbar/>
-  </div>;
+  return (
+    <div className="content">
+      <Navbar />
+      <MainContent />
+    </div>
+  );
 };
 
 export default App;
