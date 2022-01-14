@@ -200,6 +200,42 @@
   }
 }
 
+.why-section{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-block: 1rem;
+  text-align: center;
+}
+
+.feature-cards-grid {
+  display: grid;
+  grid-template-columns: 20rem 20rem 20rem;
+  gap: 1rem;
+}
+
 .feature-card {
-  background: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+
+  .image-bg {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .image{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  h3 {
+    text-transform: uppercase;
+  }
 }

@@ -26,6 +26,8 @@ import MenuItems from "./components/MenuItems";
 import Navbar from "custom-components/Navbar";
 import MainContent from "custom-components/MainContent";
 import FundRaiserCard from "custom-components/FundRaiserCard";
+import FeatureCard from "custom-components/FeatureCard";
+import Icons from "assets/icons.export";
 const { Header, Footer } = Layout;
 
 const styles = {
@@ -115,8 +117,35 @@ const App = ({ isServerInfo }) => {
         </div>
       </section>
 
-      <section>
+      <section className="why-section">
         <h2>Why Donaterra</h2>
+
+        <div className="feature-cards-grid">
+          <FeatureCard
+            featureIcon={Icons.Features.Annonymity}
+            featureTitle="Annonymity"
+          />
+          <FeatureCard
+            featureIcon={Icons.Features.Secure}
+            featureTitle="Security"
+          />
+          <FeatureCard
+            featureIcon={Icons.Features.Global}
+            featureTitle="Globally Available"
+          />
+          <FeatureCard
+            featureIcon={Icons.Features.EasyToSetup}
+            featureTitle="Easy to Setup"
+          />
+          <FeatureCard
+            featureIcon={Icons.Features.Speed}
+            featureTitle="Speedy"
+          />
+          <FeatureCard
+            featureIcon={Icons.Features.Transparent}
+            featureTitle="Transparent"
+          />
+        </div>
       </section>
     </div>
   );
