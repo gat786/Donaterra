@@ -164,13 +164,19 @@ const App = ({ isServerInfo }) => {
 
       <section className="socials-section">
         <h2>Have any queries? Have a chat with us here on our socials</h2>
-        
+
         <div className="social-icons-grid">
-          <SocialIcon url="https://discord.gg"/>
-          <SocialIcon url="https://facebook.com"/>
-          <SocialIcon url="https://instagram.com"/>
+          <SocialIcon url="https://discord.gg" />
+          <SocialIcon url="https://facebook.com" />
+          <SocialIcon url="https://instagram.com" />
         </div>
       </section>
+
+      <footer>
+        Made with ♥️ by &nbsp; <a href="https://twitter.com/igat786">@gat786</a>, &nbsp;{" "}
+        <a href="https://twitter.com/sammeieksha">@sameeksha</a> &nbsp;
+        <a href="https://popcat.games/">@akshit</a>
+      </footer>
     </div>
   );
 };
