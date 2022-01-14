@@ -25,6 +25,7 @@ import Ramper from "components/Ramper";
 import MenuItems from "./components/MenuItems";
 import Navbar from "custom-components/Navbar";
 import MainContent from "custom-components/MainContent";
+import FundRaiserCard from "custom-components/FundRaiserCard";
 const { Header, Footer } = Layout;
 
 const styles = {
@@ -72,6 +73,21 @@ const App = ({ isServerInfo }) => {
     <div className="content">
       <Navbar />
       <MainContent />
+      <div>
+        <input
+          className="search-fundraiser-mainpage"
+          type="text"
+          name=""
+          id=""
+          placeholder="Search by fundraisers, cause, creator"
+        />
+
+        <h2 className="text-center">Fundraisers that need urgent help</h2>
+      </div>
+
+      <div>
+        <FundRaiserCard />
+      </div>
     </div>
   );
 };

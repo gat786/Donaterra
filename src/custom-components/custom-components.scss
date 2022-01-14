@@ -74,3 +74,59 @@
     box-shadow: 4px 4px 8px 0px #00000040;
   }
 }
+
+.search-fundraiser-mainpage {
+  border: none;
+  margin-block: 1rem;
+  padding: 1rem;
+  padding-inline: 3rem;
+  border-radius: 10rem;
+  font-size: xx-large;
+}
+
+.frc {
+  padding: 1rem;
+  background: linear-gradient(268.31deg, #a6d8f4 48.36%, #a6cef5 98.55%);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  text-align: center;
+
+  .frc-bg {
+    background: #fff;
+    border-radius: 1rem;
+    padding-block-end: 1rem;
+
+    button {
+      background: #614fb9;
+      border: none;
+      color: white;
+      padding: 1rem;
+      padding-inline: 2rem;
+      border-radius: 1rem;
+      box-shadow: 4px 4px 8px 0px #00000040;
+    }
+  }
+
+  .frc-row {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .title-subtitle {
+    padding-block: 0.8rem;
+  }
+}
+
+.text-gray {
+  color: gray;
+}
+
+.frc-image {
+  height: 25rem;
+  width: 23rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
