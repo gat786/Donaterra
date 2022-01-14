@@ -28,7 +28,10 @@ import MainContent from "custom-components/MainContent";
 import FundRaiserCard from "custom-components/FundRaiserCard";
 import FeatureCard from "custom-components/FeatureCard";
 import Icons from "assets/icons.export";
-const { Header, Footer } = Layout;
+import CausesCard from "custom-components/CausesCard";
+
+import { Face } from "react-social";
+import { SocialIcon } from "react-social-icons";
 
 const styles = {
   content: {
@@ -145,6 +148,27 @@ const App = ({ isServerInfo }) => {
             featureIcon={Icons.Features.Transparent}
             featureTitle="Transparent"
           />
+        </div>
+      </section>
+
+      <section className="causes-section">
+        <h2>Causes you can donate to</h2>
+
+        <div className="causes-card-grid">
+          <CausesCard backgroundColor="#FFE5C2" cause="Cancer" />
+          <CausesCard backgroundColor="#C2F0FF" cause="Tumour" />
+          <CausesCard backgroundColor="#FFC2F2" cause="Heart Transplant" />
+          <CausesCard backgroundColor="#E4CAFF" cause="Liver Transplant" />
+        </div>
+      </section>
+
+      <section className="socials-section">
+        <h2>Have any queries? Have a chat with us here on our socials</h2>
+        
+        <div className="social-icons-grid">
+          <SocialIcon url="https://discord.gg"/>
+          <SocialIcon url="https://facebook.com"/>
+          <SocialIcon url="https://instagram.com"/>
         </div>
       </section>
     </div>
