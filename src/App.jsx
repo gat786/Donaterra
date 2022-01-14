@@ -73,7 +73,7 @@ const App = ({ isServerInfo }) => {
     <div className="content">
       <Navbar />
       <MainContent />
-      <div>
+      <section className="fundraiser-cards-panel">
         <input
           className="search-fundraiser-mainpage"
           type="text"
@@ -83,11 +83,41 @@ const App = ({ isServerInfo }) => {
         />
 
         <h2 className="text-center">Fundraisers that need urgent help</h2>
-      </div>
 
-      <div>
-        <FundRaiserCard />
-      </div>
+        <div className="fundraiser-card-flex">
+          <FundRaiserCard />
+          <FundRaiserCard />
+          <FundRaiserCard />
+        </div>
+      </section>
+
+      <section className="start-fr-section">
+        <h2>Start a Fundraiser right away!</h2>
+
+        <div className="donate-now-box">
+          <button className="create-button">
+            <i className="material-icons">east</i>
+          </button>
+          <div>
+            <label htmlFor="target-amount-input">
+              How much do you want to raise
+            </label>
+            <input type="number" name="" id="target-amount-input" />
+          </div>
+          <div>
+            <label htmlFor="">Your Name</label>
+            <input type="text" name="" id="" />
+          </div>
+          <div>
+            <label htmlFor="">Fundraiser For</label>
+            <input type="text" name="" id="" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Why Donaterra</h2>
+      </section>
     </div>
   );
 };
