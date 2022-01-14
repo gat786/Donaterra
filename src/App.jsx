@@ -30,7 +30,6 @@ import FeatureCard from "custom-components/FeatureCard";
 import Icons from "assets/icons.export";
 import CausesCard from "custom-components/CausesCard";
 
-import { Face } from "react-social";
 import { SocialIcon } from "react-social-icons";
 
 const styles = {
