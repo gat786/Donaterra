@@ -15,7 +15,11 @@ export default function MainContent() {
         <button>Donate Now</button>
       </div>
       <div>
-        <img src={Images.MainContentImage} alt="" />
+        <img
+          className="main-component-image"
+          src={Images.MainContentImage}
+          alt=""
+        />
       </div>
     </div>
   );
