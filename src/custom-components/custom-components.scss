@@ -66,6 +66,15 @@
   width: max-content;
 }
 
+.footer-text{
+  display: inline-flex;
+
+  a{
+    display: inline;
+    padding-inline: .2rem;
+  }
+}
+
 .maincontent {
   background: linear-gradient(
     90deg,

@@ -171,9 +171,10 @@ const App = ({ isServerInfo }) => {
         </div>
       </section>
 
-      <footer>
-        Made with ♥️ by &nbsp; <a href="https://twitter.com/igat786">@gat786</a>, &nbsp;{" "}
-        <a href="https://twitter.com/sammeieksha">@sameeksha</a> &nbsp;
+      <footer className="footer-text">
+        
+        Made with ♥️ by <a href="https://twitter.com/igat786">@gat786</a>
+        <a href="https://twitter.com/sammeieksha">@sameeksha</a>
         <a href="https://popcat.games/">@akshit</a>
       </footer>
     </div>
