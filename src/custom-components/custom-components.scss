@@ -20,6 +20,52 @@
   display: none;
 }
 
+.side-options {
+  display: flex;
+  align-items: center;
+
+  button{
+    background: none;
+    border: none;
+    padding: 2rem;
+  }
+}
+
+.connect-wallet {
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.flyout-parent{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.options-flyout{
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+  position: absolute;
+  right: 0rem;
+  top: 100%;
+  border-radius: 1rem;
+
+  transition: height .5s;
+
+  li{
+    padding: 1rem;
+    background-color: purple;
+    color: white;
+  }
+}
+
+.options-flyout-visible{
+  height: 160px;
+  width: max-content;
+}
+
 .maincontent {
   background: linear-gradient(
     90deg,
@@ -291,6 +337,18 @@
       font-size: 1em;
       font-weight: 500;
       color: #36258b;
+    }
+  }
+
+  .side-options {
+    display: flex;
+    align-items: center;
+  
+    button{
+      background: none;
+      border: none;
+      display: none;
+      padding: 2rem;
     }
   }
 
