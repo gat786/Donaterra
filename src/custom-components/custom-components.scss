@@ -27,7 +27,6 @@
     rgba(9, 206, 249, 0.3) 51.68%,
     rgba(173, 255, 0, 0.3) 97.6%
   );
-  height: 50rem;
   width: 90%;
   border-radius: 2rem;
   box-shadow: -9px -9px 16px 0px #ffffff99;
@@ -35,13 +34,15 @@
 
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   justify-content: space-between;
   align-items: center;
 
   .section-heading {
     color: #3057b1;
-    font-size: 4em;
+    font-size: 2em;
     font-weight: 500;
+    padding-block: 1rem;
   }
 
   .list-features {
@@ -119,8 +120,7 @@
 }
 
 .fundraiser-card-flex {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 4rem;
   margin-block: 2rem;
 }
@@ -134,6 +134,7 @@
   );
   border: 1px solid #ffffff4d;
   display: flex;
+  width: 80vw;
   flex-direction: column;
   gap: 1rem;
   padding: 2rem;
@@ -247,6 +248,31 @@
 }
 
 @media only screen and (min-width: 480px) {
+  .search-fundraiser-mainpage {
+    width: max-content;
+    font-size: large;
+  }
+
+  .maincontent {
+    height: 50rem;
+
+    .section-heading {
+      font-size: 2.5em;
+    }
+  }
+
+  .feature-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .causes-card-grid {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -268,18 +294,54 @@
     }
   }
 
+  .feature-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
   .maincontent {
     display: flex;
     flex-direction: row;
+
+    .section-heading {
+      font-size: 3em;
+    }
   }
 
   .main-component-image {
     width: 20rem;
   }
 
-  .frc {
-    display: flex;
-    flex-direction: column;
+  .fundraiser-card-flex {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .causes-card-grid {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .donate-now-box {
+    flex-direction: row;
+    width: max-content;
+  }
+
+  .causes-card-grid {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .fundraiser-card-flex {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -306,7 +368,7 @@
   margin-block: 2rem;
   text-align: center;
 
-  h2{
+  h2 {
     padding-inline: 2rem;
   }
 }
