@@ -2,6 +2,7 @@ import Images from "assets/images.export";
 import React from "react";
 
 import styles from "custom-components/custom-components.scss";
+import { Link } from "react-router-dom";
 
 export default function FundRaiserCard() {
   return (
@@ -23,9 +24,7 @@ export default function FundRaiserCard() {
           </div>
         </div>
 
-        <button>
-            Donate
-        </button>
+        <Link to="/example-donation">Donate</Link>
       </div>
     </div>
   );
