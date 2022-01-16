@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 
 import "custom-components/custom-components.scss";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [showNavOptions, setShowNavOptions] = useState<boolean>(false);
 
   return (
     <nav className="nav-row">
-      <div className="">
+      <Link to="/" className="">
         <h1 className="poppins title">Donaterra</h1>
         <span>Crypto donations</span>
-      </div>
+      </Link>
 
       <div className="nav-card">
-        <a>How it works</a>
+        <Link to="/how-it-works">How it works</Link>
         <a>Start a Fundraiser</a>
         <a>Browse Fundraisers</a>
       </div>
@@ -36,7 +37,9 @@ export default function Navbar() {
               showNavOptions && "options-flyout-visible"
             }`}
           >
-            <li>How it works</li>
+            <li>
+              <Link to="/how-it-works">How it works</Link>
+            </li>
             <li>Start a Fundraiser</li>
             <li>Browse Fundraisers</li>
           </ul>
