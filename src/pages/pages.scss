@@ -78,14 +78,17 @@
   margin-block: 2rem;
 }
 
+.donation-bottom{
+    width: 90%;
+}
+
 .about-donation-heading {
   color: #614fb9;
   font-size: 1.6em;
 }
 
-.donation-about{
-    font-size: 1.2em;
-
+.donation-about {
+  font-size: 1.2em;
 }
 
 @media only screen and (min-width: 480px) {
@@ -109,6 +112,10 @@
   .donate-button {
     width: 100%;
     font-size: 1.5em;
+  }
+
+  .donation-details {
+    width: 50%;
   }
 
   .read-buttons {
