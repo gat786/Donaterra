@@ -73,6 +73,21 @@
   background-color: white;
 }
 
+.donation-details {
+  width: 90%;
+  margin-block: 2rem;
+}
+
+.about-donation-heading {
+  color: #614fb9;
+  font-size: 1.6em;
+}
+
+.donation-about{
+    font-size: 1.2em;
+
+}
+
 @media only screen and (min-width: 480px) {
   .section {
     justify-content: space-between;
@@ -104,8 +119,8 @@
     font-size: 1.7em;
   }
 
-  .donation-image{
-      max-height: 40rem;
+  .donation-image {
+    max-height: 40rem;
   }
 
   .time-left {
@@ -123,8 +138,8 @@
     font-size: 1.7em;
   }
 
-  .read-buttons{
-      font-size: 1.5em;
+  .read-buttons {
+    font-size: 1.5em;
   }
 
   .time-left {
