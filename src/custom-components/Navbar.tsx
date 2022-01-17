@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="nav-card">
         <Link to="/how-it-works">How it works</Link>
         <a>Start a Fundraiser</a>
-        <a>Browse Fundraisers</a>
+        <Link to="/example-donation">Browse Fundraisers</Link>
       </div>
 
       <div className="side-options">
@@ -41,7 +41,9 @@ export default function Navbar() {
               <Link to="/how-it-works">How it works</Link>
             </li>
             <li>Start a Fundraiser</li>
-            <li>Browse Fundraisers</li>
+            <li>
+              <Link to="/example-donation">Browse Fundraisers</Link>
+            </li>
           </ul>
         </div>
       </div>
